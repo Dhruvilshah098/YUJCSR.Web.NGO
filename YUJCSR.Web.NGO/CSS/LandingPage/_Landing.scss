@@ -1,0 +1,212 @@
+﻿.home-page-content {
+    background: #F0F0F0;
+}
+
+/* Navbar */
+.header-navbar {
+    padding: 15px 40px;
+
+
+    > .container-fluid {
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        padding: 0px;
+    }
+
+    .navbar-collapse {
+        @media (max-width: 991px) {
+            margin-top: 15px;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #000000;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                    @media (max-width: 1028px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .action-container {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: 991px) {
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            border-radius: 60px;
+            border-width: 1px;
+            font-size: 16px;
+            font-weight: 600;
+
+            &:focus {
+                box-shadow: 0 0 4px 0.25rem rgba(247, 71, 71, 0.5);
+            }
+
+            @media (max-width: 1028px) {
+                font-size: 14px;
+            }
+        }
+
+        .btn-outline-primary {
+            border-color: #F74747;
+            color: #F74747;
+
+            &:hover {
+                background-color: #F74747;
+                color: #ffffff;
+            }
+        }
+
+        .btn-primary {
+            background-color: #F74747;
+            color: #ffffff;
+            border-color: #F74747;
+        }
+    }
+}
+
+/* Banner Section */
+
+.banner-section {
+    height: 620px;
+    background-image: url(/Assets/images/banner-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .banner-title {
+        color: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .info-search-wrapper {
+        height: 50px;
+        background: #ffffff;
+        height: 73px;
+        /*width: 967px;*/
+        border-radius: 10px;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.20);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Number section */
+
+.number-section {
+    display: flex;
+
+    > .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .number-card {
+        text-align: center;
+        padding: 18px;
+        min-height: 124px;
+
+        .number {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 35px;
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-top: 5px;
+        }
+
+        &:first-child, &:last-child {
+            background: rgba(248, 73, 73, 0.60);
+
+            .number, .text {
+                color: #491313;
+            }
+        }
+
+        &:nth-child(2) {
+            background: rgba(0, 112, 188, 0.60);
+
+            .number, .text {
+                color: #042C48;
+            }
+        }
+
+        &:nth-child(3) {
+            background: rgba(120, 200, 67, 0.60);
+
+            .number, .text {
+                color: #2D5214;
+            }
+        }
+
+        &:nth-child(4) {
+            background: rgba(64, 180, 231, 0.60);
+
+            .number, .text {
+                color: #014C6D;
+            }
+        }
+
+        &:nth-child(5) {
+            background: rgba(254, 211, 1, 0.60);
+
+            .number, .text {
+                color: #615000;
+            }
+        }
+    }
+}
+
+/* Who we are section */
+
+.who-we-are-section {
+    padding: 100px;
+
+    @media (max-width: 991px) {
+        padding: 50px 0px;
+    }
+
+    h2 {
+        color: #0271BC;
+        font-size: 35px;
+        font-weight: 400;
+    }
+}
+
+/* Services section */
+
+.service-section {
+
+}
